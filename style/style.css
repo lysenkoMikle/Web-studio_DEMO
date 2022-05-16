@@ -90,7 +90,7 @@ body a {
 
 .header {
   background: #2f303a;
-  background-image: url(/img/Imgbg.jpg);
+  background-image: url(../img/Imgbg.jpg);
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -463,7 +463,6 @@ textarea::placeholder {
   line-height: 19px;
   letter-spacing: 0.03em;
   color: #757575;
-  /* margin-bottom: 30px; */
 }
 /* ---------SOCIAL LINKS----------- */
 .social__links {
@@ -471,7 +470,6 @@ textarea::placeholder {
   justify-content: space-around;
   justify-content: center;
   margin-bottom: 30px;
-  /* width: 206px; */
 }
 .slinks__item {
   display: flex;
@@ -481,12 +479,9 @@ textarea::placeholder {
   justify-content: center;
   align-items: center;
   margin: 0px 5px;
-  /* background-color: #fff; */
-  /* opacity: 10%; */
 }
 .slinks__item:hover {
   background-color: #2196f3;
-  /* content: url(/img/logo/team_link/instagram\ 2.png); */
 }
 .slinks__item img {
   display: block;
@@ -508,56 +503,53 @@ textarea::placeholder {
 .partners__item {
   width: 170px;
   height: 92px;
-  /* border: 1px solid #afb1b8; */
-  /* box-sizing: border-box; */
-  /* border-radius: 4px; */
 }
 .item1 {
-  background-image: url(/img/partners/Client\ 1.png);
+  background-image: url(../img/partners/Client1.png);
   transition-duration: 200ms;
 }
 .item1:hover {
-  background-image: url(/img/partners/Client\ 1cl1.png);
+  background-image: url(../img/partners/Client1cl1.png);
 }
 
 .item2 {
-  background-image: url(/img/partners/Client\ 2.png);
+  background-image: url(../img/partners/Client2.png);
   transition-duration: 200ms;
 }
 .item2:hover {
-  background-image: url(/img/partners/Client\ 2cl2.png);
+  background-image: url(../img/partners/Client2cl2.png);
 }
 
 .item3 {
-  background-image: url(/img/partners/Client\ 3.png);
+  background-image: url(../img/partners/Client3.png);
   transition-duration: 200ms;
 }
 .item3:hover {
-  background-image: url(/img/partners/Client\ 3cl3.png);
+  background-image: url(../img/partners/Client3cl3.png);
 }
 
 .item4 {
-  background-image: url(/img/partners/Client\ 4.png);
+  background-image: url(../img/partners/Client4.png);
   transition-duration: 200ms;
 }
 .item4:hover {
-  background-image: url(/img/partners/Client\ 4cl4.png);
+  background-image: url(../img/partners/Client4cl4.png);
 }
 
 .item5 {
-  background-image: url(/img/partners/Client\ 5.png);
+  background-image: url(../img/partners/Client5.png);
   transition-duration: 200ms;
 }
 .item5:hover {
-  background-image: url(/img/partners/Client\ 5cl5.png);
+  background-image: url(../img/partners/Client5cl5.png);
 }
 
 .item6 {
-  background-image: url(/img/partners/Client\ 6.png);
+  background-image: url(../img/partners/Client6.png);
   transition-duration: 200ms;
 }
 .item6:hover {
-  background-image: url(/img/partners/Client\ 6cl6.png);
+  background-image: url(../img/partners/Client6cl6.png);
 }
 
 /* -----footer---------- */
@@ -610,14 +602,14 @@ textarea::placeholder {
   background-color: rgba(255, 255, 255, 0.123);
 }
 
-/* portfolio page */
+/* -------------portfolio page------------- */
 .portfolio {
   max-width: 1170px;
   margin: 0px auto;
 }
 
 .portfolio__content {
-  margin-top: 94px;
+  margin-top: 40px;
 }
 
 .navigation {
@@ -652,7 +644,6 @@ textarea::placeholder {
   line-height: 26px;
   letter-spacing: 0.03em;
   color: #212121;
-  /* margin: 0px 22px; */
 }
 .btn__link:hover {
   background-color: #2196f3;
@@ -667,7 +658,6 @@ textarea::placeholder {
 
 .items_row {
   display: flex;
-  /* flex: 0 1 33.333%; */
   flex: 1 1 auto;
   justify-content: space-between;
 }
