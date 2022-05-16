@@ -118,24 +118,43 @@ body a {
 .header__button {
   cursor: pointer;
   color: #fff;
-  width: 200px;
-  height: 50px;
+  padding: 15px 40px;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  text-align: center;
   margin-top: 30px;
-
-  font-family: "Roboto";
-  text-decoration: none;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
-
   transition-duration: 500ms;
+  position: relative;
+  overflow-x: hidden;
 }
 .header__button:hover {
   background: #065da5;
+}
+.header__button .flare {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 45px;
+  transform: skewX(-45deg);
+  animation: flareAnimation;
+  left: -150%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.4)
+  );
+  animation: flareAnimation 2s infinite linear;
+}
+
+@keyframes flareAnimation {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 150%;
+  }
 }
 
 /*------------- pop_up button------ */
