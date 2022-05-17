@@ -5,6 +5,10 @@ body {
 body a {
   text-decoration: none;
 }
+body.notOverflow {
+  overflow: hidden;
+  padding-right: 21px;
+}
 .wrapper {
   overflow: hidden;
   display: flex;
@@ -29,8 +33,9 @@ body a {
   height: 70px;
   position: fixed;
   width: 100%;
+  max-width: 1600px;
   top: 0;
-  left: 0;
+  left: 20;
   z-index: 20;
 }
 .nav__content {
@@ -646,23 +651,35 @@ textarea::placeholder {
   line-height: 26px;
   letter-spacing: 0.03em;
   color: #212121;
+  transition: all 0.3s;
 }
 .btn__link:hover {
   background-color: #2196f3;
   color: #fff;
   transition-duration: 300ms;
 }
+.btn__link.active {
+  background-color: #2196f3;
+  color: #fff;
+}
 .items {
   margin-top: 50px;
   margin-bottom: 64px;
   max-width: 1170px;
 }
-
-.items_row {
+.list_items {
   display: flex;
-  flex: 1 1 auto;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
 }
+
+.list_items li {
+  flex: 0 1 32.4%;
+  list-style: none;
+  margin-right: 10px;
+}
+
 .item {
   width: 370px;
   height: 404px;
@@ -670,10 +687,13 @@ textarea::placeholder {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   transition-duration: 300ms;
+  display: none;
 }
-.item a {
-  text-decoration: none;
+
+.item.active {
+  display: block;
 }
+
 .item:hover {
   transform: scale(1.05);
   box-shadow: 1px 2px 4px rgba(0, 0, 0);
