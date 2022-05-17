@@ -1,6 +1,7 @@
 body {
   margin: 0 auto;
   background-color: #ececec;
+  height: 100vh;
 }
 body a {
   text-decoration: none;
@@ -10,11 +11,12 @@ body.notOverflow {
   padding-right: 21px;
 }
 .wrapper {
+  min-height: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   max-width: 1600px;
-  min-height: 100%;
+
   margin: 0px auto;
   box-shadow: 0px 1px 4px rgba(0, 0, 0);
 }
@@ -87,7 +89,7 @@ body.notOverflow {
 
 /* -------------main page------------ */
 .content {
-  padding-top: 70px;
+  margin-top: 70px;
   flex: 1 1 auto;
   font-family: "Roboto";
   background-color: #fff;
@@ -717,4 +719,29 @@ textarea::placeholder {
   letter-spacing: 0.06em;
   color: #212121;
   margin-bottom: 0px;
+}
+
+/* --------contacts page-------- */
+
+.contacts {
+  max-width: 1170px;
+  padding: 50px 0px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.cont-logo {
+  font-size: 50px;
+  width: 300px;
+  height: 100px;
+  background: #3397e9d7;
+  border-radius: 30px;
+  text-align: center;
+  padding-top: 70px;
+}
+.cont-logo span {
+  color: #f5f4fa;
+}
+.map {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0);
 }
