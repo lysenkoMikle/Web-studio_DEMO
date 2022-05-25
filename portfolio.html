@@ -29,19 +29,43 @@
             <a href="index.html" class="nav__logo logo"
               ><span class="active">Web</span>Studio</a
             >
-            <a href="index.html" class="nav__link">Студия</a>
-            <a href="#" class="nav__link active">Портфолио</a>
-            <a href="contacts.html" class="nav__link">Контакты</a>
-          </div>
-          <div class="nav__contacts">
-            <a href="mailto:info@devstudio.com" class="nav__contact">
-              <img src="img/logo/email_logo.png" alt="logo" />
-              info@devstudio.com</a
-            >
-            <a href="tel:+380961111111" class="nav__contact"
-              ><img src="img/logo/smartphonetel_logo.svg" alt="logo" /> +38 096
-              111 11 11</a
-            >
+
+            <div class="nav__burger"><span></span></div>
+            <div class="menu">
+              <ul class="nav__list">
+                <li><a href="index.html" class="nav__link">Студия</a></li>
+                <li><a href="#" class="nav__link active">Портфолио</a></li>
+                <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+              </ul>
+              <ul class="nav__list_contacts">
+                <li>
+                  <a href="mailto:info@devstudio.com" class="nav__contact">
+                    <img
+                      src="img/logo/email_logo.png"
+                      alt="logo"
+                      class="nav_contact_logo"
+                    />
+                    <span>info@devstudio.com</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+380961111111" class="nav__contact nav__tel">
+                    <img
+                      src="img/logo/smartphone.png"
+                      alt="logo"
+                      class="nav_contact_logo"
+                    />
+                    <span>+38 096 111 11 11</span></a
+                  >
+                </li>
+              </ul>
+              <ul class="burger_links">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -263,7 +287,7 @@
               ><span class="active">Web</span>Studio</a
             >
             <div class="footer__contacts">
-              <span> <address>г. Киев, пр-т Леси Украинки, 26</address> </span>
+              <address>г. Киев, пр-т Леси Украинки, 26</address>
               <p>
                 <a
                   href="mailto:info@devstudio.com"
@@ -315,5 +339,6 @@
     </div>
     <script src="tabs.js"></script>
     <!-- <script src="script.js"></script> -->
+    <script src="burger.js"></script>
   </body>
 </html>

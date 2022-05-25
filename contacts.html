@@ -26,22 +26,50 @@
       <div class="nav">
         <div class="nav__content">
           <div class="nav__links">
-            <a href="#" class="nav__logo logo"
+            <a href="index.html" class="nav__logo logo"
               ><span class="active">Web</span>Studio</a
             >
-            <a href="index.html" class="nav__link">Студия</a>
-            <a href="portfolio.html" class="nav__link">Портфолио</a>
-            <a href="#" class="nav__link active">Контакты</a>
-          </div>
-          <div class="nav__contacts">
-            <a href="mailto:info@devstudio.com" class="nav__contact">
-              <img src="img/logo/email_logo.png" alt="logo" />
-              info@devstudio.com</a
-            >
-            <a href="tel:+380961111111" class="nav__contact"
-              ><img src="img/logo/smartphonetel_logo.svg" alt="logo" /> +38 096
-              111 11 11</a
-            >
+
+            <div class="nav__burger"><span></span></div>
+            <div class="menu">
+              <ul class="nav__list">
+                <li><a href="index.html" class="nav__link">Студия</a></li>
+                <li>
+                  <a href="portfolio.html" class="nav__link">Портфолио</a>
+                </li>
+                <li>
+                  <a href="##" class="nav__link active">Контакты</a>
+                </li>
+              </ul>
+              <ul class="nav__list_contacts">
+                <li>
+                  <a href="mailto:info@devstudio.com" class="nav__contact">
+                    <img
+                      src="img/logo/email_logo.png"
+                      alt="logo"
+                      class="nav_contact_logo"
+                    />
+                    <span>info@devstudio.com</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+380961111111" class="nav__contact nav__tel">
+                    <img
+                      src="img/logo/smartphone.png"
+                      alt="logo"
+                      class="nav_contact_logo"
+                    />
+                    <span>+38 096 111 11 11</span></a
+                  >
+                </li>
+              </ul>
+              <ul class="burger_links">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -52,14 +80,10 @@
 
             <address>г. Киев, пр-т Леси Украинки, 26</address>
             <p>
-              <a href="mailto:info@devstudio.com" class="nav__link">
-                info@devstudio.com</a
-              >
+              <a href="mailto:info@devstudio.com"> info@devstudio.com</a>
             </p>
             <p>
-              <a href="tel:+380961111111" class="nav__link"
-                >+38 096 111 11 11</a
-              >
+              <a href="tel:+380961111111">+38 096 111 11 11</a>
             </p>
           </div>
           <div class="map">
@@ -134,5 +158,6 @@
       </footer>
       <!-- </div> -->
     </div>
+    <script src="burger.js"></script>
   </body>
 </html>
