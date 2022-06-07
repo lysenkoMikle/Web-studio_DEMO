@@ -32,7 +32,7 @@ body.notOverflow {
 }
 
 .nav {
-  background-color: #f0f0f0c4;
+  background-color: #fcf8f8f5;
   height: 80px;
   position: fixed;
   width: 100%;
@@ -45,8 +45,7 @@ body.notOverflow {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  align-items: center;
+  font-size: 16px;
   max-width: 1170px;
   margin: 0px auto;
   padding-top: 20px;
@@ -56,6 +55,7 @@ body.notOverflow {
   position: relative;
   justify-content: space-between;
   line-height: 16px;
+  align-items: center;
 }
 .menu {
   display: flex;
@@ -731,8 +731,15 @@ textarea::placeholder {
   align-items: center;
   margin: 0px 5px;
 }
+.slinks__item svg {
+  fill: #9c9c9c;
+}
+
 .slinks__item:hover {
   background-color: #2196f3;
+}
+.slinks__item:hover svg {
+  fill: #fff;
 }
 .slinks__item img {
   display: block;
